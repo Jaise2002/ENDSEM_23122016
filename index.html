@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles-home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <input type="text" id="search-bar" placeholder="Search for products...">
+            <button id="home-button" onclick="window.location.href='index.html'">Home</button>
+            <button id="login-button" onclick="window.location.href='login.html'">Login</button>
+                <button onclick="location.href='cart.html'" class="cart-button">Cart</button> <!-- Cart button added here -->
+            
+        </div>
+    </nav>
+    <!-- Carousel Section -->
+    <div class="carousel">
+        <div class="carousel-item active">
+            <img src="image1.jpg" alt="Product 1">
+        </div>
+        <div class="carousel-item">
+            <img src="image2.jpg" alt="Product 2">
+        </div>
+        <div class="carousel-item">
+            <img src="image3.jpg" alt="Product 3">
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <!-- YouTube Video Section -->
+    <div class="video-container">
+        <h2>Watch Our Product Showcase</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
+    <div class="products-container" id="products-container">
+        <div class="product-card" data-name="iPhone 14" data-price="999">
+            <img src="iphone14.jpg" alt="iPhone 14">
+            <h3>iPhone 14</h3>
+            <p>$999</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Samsung Galaxy S22" data-price="799">
+            <img src="galaxy_s22.jpg" alt="Samsung Galaxy S22">
+            <h3>Samsung Galaxy S22</h3>
+            <p>$799</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Google Pixel 7" data-price="599">
+            <img src="pixel7.jpg" alt="Google Pixel 7">
+            <h3>Google Pixel 7</h3>
+            <p>$599</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="OnePlus 10" data-price="729">
+            <img src="oneplus10.jpg" alt="OnePlus 10">
+            <h3>OnePlus 10</h3>
+            <p>$729</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Xiaomi 12" data-price="649">
+            <img src="xiaomi12.jpg" alt="Xiaomi 12">
+            <h3>Xiaomi 12</h3>
+            <p>$649</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Oppo Find X5" data-price="899">
+            <img src="oppo_find_x5.jpg" alt="Oppo Find X5">
+            <h3>Oppo Find X5</h3>
+            <p>$899</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Sony Xperia 1 IV" data-price="1099">
+            <img src="xperia1_iv.jpg" alt="Sony Xperia 1 IV">
+            <h3>Sony Xperia 1 IV</h3>
+            <p>$1099</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Nokia G50" data-price="299">
+            <img src="nokia_g50.jpg" alt="Nokia G50">
+            <h3>Nokia G50</h3>
+            <p>$299</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Realme GT" data-price="499">
+            <img src="realme_gt.jpg" alt="Realme GT">
+            <h3>Realme GT</h3>
+            <p>$499</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Huawei P40 Pro" data-price="899">
+            <img src="huawei_p40_pro.jpg" alt="Huawei P40 Pro">
+            <h3>Huawei P40 Pro</h3>
+            <p>$899</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Asus ROG Phone 6" data-price="999">
+            <img src="rog_phone6.jpg" alt="Asus ROG Phone 6">
+            <h3>Asus ROG Phone 6</h3>
+            <p>$999</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Vivo X70 Pro" data-price="699">
+            <img src="vivo_x70_pro.jpg" alt="Vivo X70 Pro">
+            <h3>Vivo X70 Pro</h3>
+            <p>$699</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="LG Velvet" data-price="599">
+            <img src="lg_velvet.jpg" alt="LG Velvet">
+            <h3>LG Velvet</h3>
+            <p>$599</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="ZTE Axon 20" data-price="399">
+            <img src="zte_axon_20.jpg" alt="ZTE Axon 20">
+            <h3>ZTE Axon 20</h3>
+            <p>$399</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Motorola Edge 20" data-price="499">
+            <img src="motorola_edge_20.jpg" alt="Motorola Edge 20">
+            <h3>Motorola Edge 20</h3>
+            <p>$499</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Poco F3" data-price="349">
+            <img src="poco_f3.jpg" alt="Poco F3">
+            <h3>Poco F3</h3>
+            <p>$349</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Infinix Zero 5G" data-price="399">
+            <img src="infinix_zero_5g.jpg" alt="Infinix Zero 5G">
+            <h3>Infinix Zero 5G</h3>
+            <p>$399</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="TCL 20 Pro 5G" data-price="499">
+            <img src="tcl_20_pro_5g.jpg" alt="TCL 20 Pro 5G">
+            <h3>TCL 20 Pro 5G</h3>
+            <p>$499</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="home-script.js"></script>
+</body>
+</html>

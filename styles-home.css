@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for better contrast */
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center the items vertically */
+}
+
+#search-bar {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    justify-content: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item.active {
+    display: flex; /* Show the active item */
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.video-container {
+    text-align: center;
+    margin: 20px;
+}
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white; /* White background for product cards */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 200px; /* Fixed width for consistency */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Scale up on hover for effect */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition effect for button */
+}
+
+.add-to-cart:hover {
+    background-color: #218838; /* Darker green on hover */
+}

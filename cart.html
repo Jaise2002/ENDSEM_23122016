@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles-cart.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <button id="home-button" onclick="window.location.href='index.html'">Home</button>
+            <button id="login-button" onclick="window.location.href='login.html'">Login</button>
+        </div>
+    </nav>
+
+    <div class="cart-container">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <h3>Total: $<span id="total-amount">0</span></h3>
+        <button id="proceed-to-payment" onclick="showPaymentPopup()">Proceed to Pay</button>
+    </div>
+
+    <div class="popup" id="payment-popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePaymentPopup()">&times;</span>
+            <h3>Payment Details</h3>
+            <input type="text" placeholder="Card Number" required>
+            <input type="text" placeholder="Expiry Date" required>
+            <input type="text" placeholder="CVV" required>
+            <button id="confirm-payment" onclick="confirmPayment()">Confirm Payment</button>
+        </div>
+    </div>
+
+    
+
+    <script src="cart-script.js"></script>
+</body>
+</html>
